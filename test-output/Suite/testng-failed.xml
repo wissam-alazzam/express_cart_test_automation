@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="TestFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="express_cart.test_cases.testRun">
+        <methods>
+          <include name="tryUI"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- express_cart.test_cases.testRun -->
+    </classes>
+  </test> <!-- TestFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser Opened]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximized]]>
+    </line>
+    <line>
+      <![CDATA[Page  Opened]]>
+    </line>
+    <line>
+      <![CDATA[Product Clciked]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8303" started-at="2020-03-08T09:33:58 GMT" finished-at="2020-03-08T09:34:06 GMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8303" started-at="2020-03-08T09:33:58 GMT" finished-at="2020-03-08T09:34:06 GMT">
+      <class name="express_cart.test_cases.testRun">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:express_cart.test_cases.testRun@14d3bc22]" name="setUp" is-config="true" duration-ms="3285" started-at="2020-03-08T09:33:58 GMT" finished-at="2020-03-08T09:34:01 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tryUI()[pri:0, instance:express_cart.test_cases.testRun@14d3bc22]" name="tryUI" duration-ms="1279" started-at="2020-03-08T09:34:01 GMT" finished-at="2020-03-08T09:34:02 GMT">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Opened]]>
+            </line>
+            <line>
+              <![CDATA[Browser Maximized]]>
+            </line>
+            <line>
+              <![CDATA[Page  Opened]]>
+            </line>
+            <line>
+              <![CDATA[Product Clciked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tryUI -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:express_cart.test_cases.testRun@14d3bc22]" name="tearDown" is-config="true" duration-ms="3649" started-at="2020-03-08T09:34:02 GMT" finished-at="2020-03-08T09:34:06 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- express_cart.test_cases.testRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
