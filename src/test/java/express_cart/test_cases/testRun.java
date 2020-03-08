@@ -29,6 +29,7 @@ public class testRun
     public void tryUI()
         throws InterruptedException, IOException
     {
+        //test
         Reporter.log( "Browser Opened" );
         driver.manage().timeouts().implicitlyWait( 10, TimeUnit.SECONDS );
         // maximize window
