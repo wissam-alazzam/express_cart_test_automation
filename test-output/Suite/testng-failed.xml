@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="TestFirefox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="express_cart.listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="HomePageChecks - Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="express_cart.test_cases.testRun">
+      <class name="express_cart.ui.homepage.test.HomePageCheck">
         <methods>
-          <include name="tryUI"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="allureScreenShot"/>
+          <include name="changeLanguageToItalian"/>
+          <include name="allureLog"/>
         </methods>
-      </class> <!-- express_cart.test_cases.testRun -->
+      </class> <!-- express_cart.ui.homepage.test.HomePageCheck -->
     </classes>
-  </test> <!-- TestFirefox(failed) -->
+  </test> <!-- HomePageChecks - Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

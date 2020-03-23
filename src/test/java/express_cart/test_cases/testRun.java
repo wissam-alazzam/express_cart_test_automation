@@ -20,7 +20,7 @@ public class testRun
     public void testCase()
     {
         System.out.println( "WUZZZZZUP" );
-        getConfigurationsByKey("BaseUrl");
+        
     }
 
     @Test

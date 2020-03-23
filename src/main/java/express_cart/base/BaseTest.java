@@ -21,6 +21,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -35,6 +37,12 @@ public class BaseTest
      * This class contains basic functionality to be used in many tests
      */
     protected WebDriver driver;
+    String name = "";
+    
+    public void name( String name )
+    {
+        this.name = name; 
+    }
     
     // Get configurations from resources/configurations.properties by suppling the key
     protected String getConfigurationsByKey(String key)
@@ -71,7 +79,7 @@ public class BaseTest
     }
 
     // This method will run after each test and close the browser
-    @AfterTest( alwaysRun = true )
+   @AfterTest( alwaysRun = true )
     protected void tearDown()
     {
         System.out.println( "[Closing driver]" );
@@ -80,7 +88,7 @@ public class BaseTest
 
     // Takes a screenshot and save it in test-output folder
     protected void takeScreenShot( String fileName )
-        throws IOException
+        throws IOException, InterruptedException
     {
         File scrFile = ( (TakesScreenshot) driver ).getScreenshotAs( OutputType.FILE );
         String path = System.getProperty( "user.dir" ) + "//test-output//screenshots//" + fileName + ".png";
@@ -89,6 +97,7 @@ public class BaseTest
     }
 
     // returns current date formatted
+    
     protected String getTime()
     {
         SimpleDateFormat formatter = new SimpleDateFormat( "ddMMyyyyHHmmss" );
@@ -98,7 +107,8 @@ public class BaseTest
     }
 
     // Uses screen shot from takeScreenShot function and display them in Allure report
-    protected void allureScreenShot()
+    @AfterMethod
+    public void allureScreenShot()
         throws IOException, InterruptedException
     {
         String time = getTime();
@@ -116,7 +126,8 @@ public class BaseTest
      * logging using capabilities so i'm saving the output to FirefoxLogs.txt and reading the output to allure
      * attachment.
      */
-    protected void allureLog()
+    @AfterMethod
+    public void allureLog()
     {
         Capabilities cap = ( (RemoteWebDriver) driver ).getCapabilities();
         String browserName = cap.getBrowserName().toLowerCase();

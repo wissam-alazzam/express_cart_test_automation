@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="express_cart.test_cases.testRun" hash-for-method="tryUI">tryUI</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="express_cart.ui.product.test.ProductPageCheck" hash-for-method="checkProductInformation">checkProductInformation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">express_cart.test_cases.testRun</span>
+              <span class="class-name">express_cart.ui.product.test.ProductPageCheck</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tryUI">
-                  </a> <!-- tryUI -->
-                  <span class="method-name">tryUI</span>
+                  <a name="checkProductInformation">
+                  </a> <!-- checkProductInformation -->
+                  <span class="method-name">checkProductInformation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/94/074dgbqd7qq4szxyfx0wgg540000gn/T/testng-eclipse-2135968409/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/94/074dgbqd7qq4szxyfx0wgg540000gn/T/testng-eclipse-1395718270/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,11 +144,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;express_cart.test_cases.testRun&quot;&gt;
+      &lt;class name=&quot;express_cart.ui.product.test.ProductPageCheck&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;tryUI&quot;/&gt;
+          &lt;include name=&quot;checkProductInformation&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- express_cart.test_cases.testRun --&gt;
+      &lt;/class&gt; &lt;!-- express_cart.ui.product.test.ProductPageCheck --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,9 +190,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tryUI')
-data.setCell(0, 2, 'express_cart.test_cases.testRun')
-data.setCell(0, 3, 1279);
+data.setCell(0, 1, 'checkProductInformation')
+data.setCell(0, 2, 'express_cart.ui.product.test.ProductPageCheck')
+data.setCell(0, 3, 1081);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -208,29 +208,13 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">tryUI</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Browser Opened</span>
-                <span class="reporter-method-output">Browser Maximized</span>
-                <span class="reporter-method-output">Page  Opened</span>
-                <span class="reporter-method-output">Product Clciked</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">express_cart.test_cases.testRun</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testCase</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -239,18 +223,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">express_cart.test_cases.testRun</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">express_cart.ui.product.test.ProductPageCheck</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">tryUI</span>
-                <span class="method-start">3309 ms</span>
+                <span class="method-name">checkProductInformation</span>
+                <span class="method-start">3429 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">allureLog</span>
+                <span class="method-start">4566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">allureScreenShot</span>
+                <span class="method-start">4582 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4646 ms</span>
+                <span class="method-start">4820 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

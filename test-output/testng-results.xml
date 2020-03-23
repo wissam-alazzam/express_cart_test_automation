@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Browser Opened]]>
-    </line>
-    <line>
-      <![CDATA[Browser Maximized]]>
-    </line>
-    <line>
-      <![CDATA[Page  Opened]]>
-    </line>
-    <line>
-      <![CDATA[Product Clciked]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8303" started-at="2020-03-08T09:33:58 GMT" finished-at="2020-03-08T09:34:06 GMT">
+  <suite name="Default suite" duration-ms="6424" started-at="2020-03-21T15:50:18 GMT" finished-at="2020-03-21T15:50:25 GMT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8303" started-at="2020-03-08T09:33:58 GMT" finished-at="2020-03-08T09:34:06 GMT">
-      <class name="express_cart.test_cases.testRun">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:express_cart.test_cases.testRun@14d3bc22]" name="setUp" is-config="true" duration-ms="3285" started-at="2020-03-08T09:33:58 GMT" finished-at="2020-03-08T09:34:01 GMT">
+    <test name="Default test" duration-ms="6424" started-at="2020-03-21T15:50:18 GMT" finished-at="2020-03-21T15:50:25 GMT">
+      <class name="express_cart.ui.product.test.ProductPageCheck">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="setUp" is-config="true" duration-ms="3417" started-at="2020-03-21T15:50:18 GMT" finished-at="2020-03-21T15:50:22 GMT">
           <params>
             <param index="0">
               <value>
@@ -30,27 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tryUI()[pri:0, instance:express_cart.test_cases.testRun@14d3bc22]" name="tryUI" duration-ms="1279" started-at="2020-03-08T09:34:01 GMT" finished-at="2020-03-08T09:34:02 GMT">
+        <test-method status="PASS" signature="checkProductInformation()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="checkProductInformation" duration-ms="1081" started-at="2020-03-21T15:50:22 GMT" finished-at="2020-03-21T15:50:23 GMT">
           <reporter-output>
-            <line>
-              <![CDATA[Browser Opened]]>
-            </line>
-            <line>
-              <![CDATA[Browser Maximized]]>
-            </line>
-            <line>
-              <![CDATA[Page  Opened]]>
-            </line>
-            <line>
-              <![CDATA[Product Clciked]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tryUI -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:express_cart.test_cases.testRun@14d3bc22]" name="tearDown" is-config="true" duration-ms="3649" started-at="2020-03-08T09:34:02 GMT" finished-at="2020-03-08T09:34:06 GMT">
+        </test-method> <!-- checkProductInformation -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="allureLog" is-config="true" duration-ms="8" started-at="2020-03-21T15:50:23 GMT" finished-at="2020-03-21T15:50:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureLog -->
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="allureScreenShot" is-config="true" duration-ms="236" started-at="2020-03-21T15:50:23 GMT" finished-at="2020-03-21T15:50:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="tearDown" is-config="true" duration-ms="1597" started-at="2020-03-21T15:50:23 GMT" finished-at="2020-03-21T15:50:25 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- express_cart.test_cases.testRun -->
+      </class> <!-- express_cart.ui.product.test.ProductPageCheck -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
