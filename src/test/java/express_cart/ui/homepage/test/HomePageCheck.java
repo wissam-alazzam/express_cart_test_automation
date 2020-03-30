@@ -27,7 +27,9 @@ public class HomePageCheck
             homePage.openHomePage();
             homePage.waitForHomePageToLoad();
             homePage.checkShopNameMatchesConfig();
+            Thread.sleep( 2000 );
             homePage.checkLanguageSelector();
+            Thread.sleep( 2000 );
 
         }
         catch ( Exception e )
@@ -74,8 +76,11 @@ public class HomePageCheck
         try
         {
             homePage.openHomePage();
+            Thread.sleep( 2000 );
             homePage.waitForHomePageToLoad();
+            Thread.sleep( 2000 );
             homePage.changeLanguage( "Italiano" );
+            Thread.sleep( 2000 );
 
         }
         catch ( Exception e )
@@ -98,7 +103,9 @@ public class HomePageCheck
         {
             homePage.openHomePage();
             homePage.waitForHomePageToLoad();
+            Thread.sleep( 2000 );
             homePage.checkCartIsOpen();
+            Thread.sleep( 2000 );
         }
         catch ( Exception e )
         {
@@ -118,8 +125,11 @@ public class HomePageCheck
         {
             homePage.openHomePage();
             homePage.waitForHomePageToLoad();
+            Thread.sleep( 2000 );
             homePage.checkProductContainer();
+            Thread.sleep( 2000 );
             homePage.clickOnAddToCart();
+            Thread.sleep( 2000 );
         }
         catch ( Exception e )
         {
@@ -139,7 +149,9 @@ public class HomePageCheck
         {
             homePage.openHomePage();
             homePage.waitForHomePageToLoad();
+            Thread.sleep( 2000 );
             homePage.checkCategoryOpened();
+            Thread.sleep( 2000 );
         }
         catch ( Exception e )
         {

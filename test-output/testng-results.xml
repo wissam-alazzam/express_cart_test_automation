@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6424" started-at="2020-03-21T15:50:18 GMT" finished-at="2020-03-21T15:50:25 GMT">
+  <suite name="Default suite" duration-ms="37484" started-at="2020-03-30T10:53:51 IST" finished-at="2020-03-30T10:54:28 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6424" started-at="2020-03-21T15:50:18 GMT" finished-at="2020-03-21T15:50:25 GMT">
-      <class name="express_cart.ui.product.test.ProductPageCheck">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="setUp" is-config="true" duration-ms="3417" started-at="2020-03-21T15:50:18 GMT" finished-at="2020-03-21T15:50:22 GMT">
+    <test name="Default test" duration-ms="37484" started-at="2020-03-30T10:53:51 IST" finished-at="2020-03-30T10:54:28 IST">
+      <class name="express_cart.ui.homepage.test.HomePageCheck">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="setUp" is-config="true" duration-ms="4158" started-at="2020-03-30T10:53:51 IST" finished-at="2020-03-30T10:53:55 IST">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,83 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkProductInformation()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="checkProductInformation" duration-ms="1081" started-at="2020-03-21T15:50:22 GMT" finished-at="2020-03-21T15:50:23 GMT">
+        <test-method status="PASS" signature="checkHomePage()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="checkHomePage" duration-ms="5196" started-at="2020-03-30T10:53:55 IST" finished-at="2020-03-30T10:54:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkProductInformation -->
-        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="allureLog" is-config="true" duration-ms="8" started-at="2020-03-21T15:50:23 GMT" finished-at="2020-03-21T15:50:23 GMT">
+        </test-method> <!-- checkHomePage -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureLog" is-config="true" duration-ms="7" started-at="2020-03-30T10:54:00 IST" finished-at="2020-03-30T10:54:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allureLog -->
-        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="allureScreenShot" is-config="true" duration-ms="236" started-at="2020-03-21T15:50:23 GMT" finished-at="2020-03-21T15:50:23 GMT">
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureScreenShot" is-config="true" duration-ms="180" started-at="2020-03-30T10:54:00 IST" finished-at="2020-03-30T10:54:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allureScreenShot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:express_cart.ui.product.test.ProductPageCheck@d706f19]" name="tearDown" is-config="true" duration-ms="1597" started-at="2020-03-21T15:50:23 GMT" finished-at="2020-03-21T15:50:25 GMT">
+        <test-method status="PASS" signature="checkShopName()[pri:1, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="checkShopName" duration-ms="284" started-at="2020-03-30T10:54:00 IST" finished-at="2020-03-30T10:54:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkShopName -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureLog" is-config="true" duration-ms="3" started-at="2020-03-30T10:54:01 IST" finished-at="2020-03-30T10:54:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureLog -->
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureScreenShot" is-config="true" duration-ms="172" started-at="2020-03-30T10:54:01 IST" finished-at="2020-03-30T10:54:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureScreenShot -->
+        <test-method status="PASS" signature="changeLanguageToItalian()[pri:2, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="changeLanguageToItalian" duration-ms="9524" started-at="2020-03-30T10:54:01 IST" finished-at="2020-03-30T10:54:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeLanguageToItalian -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureLog" is-config="true" duration-ms="3" started-at="2020-03-30T10:54:10 IST" finished-at="2020-03-30T10:54:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureLog -->
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureScreenShot" is-config="true" duration-ms="169" started-at="2020-03-30T10:54:10 IST" finished-at="2020-03-30T10:54:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureScreenShot -->
+        <test-method status="PASS" signature="checkCart()[pri:3, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="checkCart" duration-ms="4547" started-at="2020-03-30T10:54:11 IST" finished-at="2020-03-30T10:54:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureLog" is-config="true" duration-ms="3" started-at="2020-03-30T10:54:15 IST" finished-at="2020-03-30T10:54:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureLog -->
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureScreenShot" is-config="true" duration-ms="168" started-at="2020-03-30T10:54:15 IST" finished-at="2020-03-30T10:54:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureScreenShot -->
+        <test-method status="PASS" signature="checkProduct()[pri:4, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="checkProduct" duration-ms="7033" started-at="2020-03-30T10:54:15 IST" finished-at="2020-03-30T10:54:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkProduct -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureLog" is-config="true" duration-ms="3" started-at="2020-03-30T10:54:22 IST" finished-at="2020-03-30T10:54:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureLog -->
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureScreenShot" is-config="true" duration-ms="180" started-at="2020-03-30T10:54:22 IST" finished-at="2020-03-30T10:54:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureScreenShot -->
+        <test-method status="PASS" signature="checkNavigationMenu()[pri:5, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="checkNavigationMenu" duration-ms="4884" started-at="2020-03-30T10:54:23 IST" finished-at="2020-03-30T10:54:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNavigationMenu -->
+        <test-method status="PASS" signature="allureLog()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureLog" is-config="true" duration-ms="2" started-at="2020-03-30T10:54:27 IST" finished-at="2020-03-30T10:54:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureLog -->
+        <test-method status="PASS" signature="allureScreenShot()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="allureScreenShot" is-config="true" duration-ms="169" started-at="2020-03-30T10:54:27 IST" finished-at="2020-03-30T10:54:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allureScreenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:express_cart.ui.homepage.test.HomePageCheck@124c278f]" name="tearDown" is-config="true" duration-ms="652" started-at="2020-03-30T10:54:28 IST" finished-at="2020-03-30T10:54:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- express_cart.ui.product.test.ProductPageCheck -->
+      </class> <!-- express_cart.ui.homepage.test.HomePageCheck -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

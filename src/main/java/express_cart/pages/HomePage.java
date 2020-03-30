@@ -3,6 +3,7 @@ package express_cart.pages;
 import java.awt.Point;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -73,15 +74,14 @@ public class HomePage
 
     private By categoryMenuItemLocator = By.xpath( "//nav[@id='navbarMenu']//li[2]//a" );
 
-    // private By productContainerLocator = By.xpath( "//body/div[@id='container']/div[@class='row
-    // h-100']/div[@class='productsWrapper col-sm-12 col-md-8 offset-md-2']/div[@class='row product-layout']/div[1]" );
-
+    //Open Home Page
     public void openHomePage()
     {
         openUrl( homePageUrl );
 
     }
 
+    //Wait for Home Page to Load 
     public void waitForHomePageToLoad()
     {
         System.out.println( "Waiting for page to load" );
@@ -89,6 +89,7 @@ public class HomePage
         System.out.println( "Page loaded!" );
     }
 
+    // Check if the Shop name matches what's in the configuration 
     public boolean checkShopNameMatchesConfig()
     {
         System.out.println( "Checking shop name" );
@@ -105,12 +106,14 @@ public class HomePage
         }
     }
 
+    // Click on language selector list 
     private void clickOnLanguageSelector()
     {
         find( languageSelectorButtonLocator ).click();
         System.out.println( "Language selector clicked" );
     }
 
+    // Changes the language based on passed String value 
     public void changeLanguage( String language )
         throws InterruptedException
     {
@@ -149,6 +152,7 @@ public class HomePage
 
     }
 
+    // Checks if the language selector contains languages in the list
     public void checkLanguageSelector()
     {
         clickOnLanguageSelector();
@@ -168,12 +172,14 @@ public class HomePage
 
     }
 
+    // Clicks on Cart button
     public void clickOnCart()
     {
         find( cartButtonLocator ).click();
         System.out.println( "Cart button is clicked" );
     }
 
+    //Checks if the cart side page is open
     public void checkCartIsOpen()
     {
         String expectedClassName = "pushy-open-right";
@@ -183,35 +189,10 @@ public class HomePage
 
     }
 
+    //General checks on the information in the product container 
     public void checkProductContainer()
     {
-//        List<WebElement> productsListLocators = driver.findElements( productContainerLocator );
-//
-//        for ( Iterator iterator = productsListLocators.iterator(); iterator.hasNext(); )
-//        {
-//
-//            WebElement webElement = (WebElement) iterator.next();
-//            List<WebElement> childElements = webElement.findElements( By.xpath( ".//div" ) );
-//            for ( Iterator iterator2 = childElements.iterator(); iterator2.hasNext(); )
-//            {
-//                WebElement childWebElement = (WebElement) iterator2.next();
-//
-//                System.out.println( childWebElement.findElement( By.xpath( ".//*" ) ).getTagName() );
-//                if ( childWebElement.findElement( By.xpath( ".//*" ) ).getTagName().contains( "img" ) )
-//                {
-//                    System.out.println( childWebElement.findElement( By.xpath( ".//img" ) ).getAttribute( "src" ) );
-//                    System.out.println( childWebElement.findElement( By.xpath( ".//img" ) ).getCssValue( "height" ) );
-//                    Assert.assertTrue( childWebElement.findElement( By.xpath( ".//img" ) ).getCssValue( "height" ) == "231.5px",
-//                                       "Image is not showing on UI" );
-//                    System.out.println( "IMAGE FOUNNND" );
-//                }
-//
-//            }
-//
-//            System.out.println( webElement.getTagName() );
-//            System.out.println( webElement.findElement( By.xpath( ".//*" ) ).getTagName() );
-//            System.out.println( webElement.findElement( By.xpath( ".//*" ) ).getText() );
-//
+
         waitForVisibilityOf( productContainerLocator, 5 );
         Dimension sizeOfImage = driver.findElement( productImageLocator ).getSize();
         System.out.println( "Image size:" + sizeOfImage );
@@ -235,37 +216,10 @@ public class HomePage
         }
     }
 
+    //Clicks on Add to cart button
     public void clickOnAddToCart()
         throws InterruptedException
     {
-//        List<WebElement> productsListLocators = driver.findElements( productContainerLocator );
-//        for ( Iterator iterator = productsListLocators.iterator(); iterator.hasNext(); )
-//        {
-//            WebElement webElement = (WebElement) iterator.next();
-//            System.out.println( webElement );
-//            // System.out.println( webElement.getTagName() );
-//            System.out.println( webElement.findElement( By.xpath( ".//*" ) ).getTagName() );
-//            System.out.println( webElement.findElement( By.xpath( ".//*" ) ).getText() );
-//            if ( webElement.findElement( By.xpath( ".//*" ) ).getText().contains( "Add to cart" ) )
-//            {
-//
-//                System.out.println( webElement.findElement( By.xpath( ".//*/p/a" ) ).getAttribute( "data-link" ) );
-////                driver.getCurrentUrl();
-//                webElement.findElement( By.xpath( ".//*/p/a" ) ).click();
-//                waitForVisibilityOf( By.xpath( "//h1[@class='col-md-10 product-title text-truncate']" ), 5 );
-//                waitWithSleep();
-//                System.out.println( driver.getCurrentUrl() );
-//
-//                driver.navigate().back();
-//                System.out.println( "WENT BACK" );
-//                // driver.navigate().refresh();
-//
-////                waitWithSleep();
-////                driver.getCurrentUrl();
-////                waitWithSleep();
-//            }
-//
-//        }
 
         String dataLink = driver.findElement( addToCartButtonLocator ).getAttribute( "data-link" );
         System.out.println( dataLink );
@@ -281,13 +235,15 @@ public class HomePage
     }
     
     
+    //Clikcs on the items in the navigation menu 
     public void clickOnNavigationMenuItem(  )
     {
         System.out.println("Clicking on a category from navigation menu");
         driver.findElement( categoryMenuItemLocator ).click();
         System.out.println(driver.findElement( categoryMenuItemLocator ).getText()+"\b is clicked");
     }
-    
+   
+    //Checks if the current page matches the category selected form navigation menu
     public void checkCategoryOpened(  )
     {
         clickOnNavigationMenuItem();

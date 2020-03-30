@@ -59,11 +59,12 @@ public class BasePageObject
         return driver.findElement( locator );
 
     }
-    
-    protected void waitWithSleep(  ) throws InterruptedException
+
+    protected void waitWithSleep()
+        throws InterruptedException
     {
         Thread.sleep( 3000 );
-        
+
     }
 
     // waits for 30 seconds or by set time
@@ -90,20 +91,10 @@ public class BasePageObject
             break;
 
         }
-//        try
-//        {
-//
-//        }
-//        catch ( StaleElementReferenceException e )
-//        {
-//            // TODO: handle exception
-//            System.out.println( "Wait for visibility of failed reason:" + e.getMessage() );
-//        }
 
         attempts++;
     }
-    
-   
+
     // closes alert and gets it's text
     void closeAlertAndGetItsText( WebDriver driver )
         throws Exception

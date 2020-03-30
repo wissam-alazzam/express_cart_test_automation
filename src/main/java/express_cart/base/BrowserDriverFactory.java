@@ -27,12 +27,14 @@ public class BrowserDriverFactory
     private WebDriver driver;
 
     private String browser;
+    
 
     public BrowserDriverFactory( String browser )
     {
         this.browser = browser.toLowerCase();
     }
 
+    // Creates and initialize a driver based on the name of the browser passed to this function
     public WebDriver createDriver()
     {
         System.out.println( "[Setting up driver: " + browser + "]" );
@@ -42,7 +44,6 @@ public class BrowserDriverFactory
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
-                // DesiredCapabilities caps = DesiredCapabilities.chrome();
                 LoggingPreferences chromeLogPrefs = new LoggingPreferences();
                 chromeLogPrefs.enable( LogType.BROWSER, Level.ALL );
                 chromeOptions.setCapability( CapabilityType.LOGGING_PREFS, chromeLogPrefs );

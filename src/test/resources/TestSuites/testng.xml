@@ -4,28 +4,57 @@
 	<listeners>
 		<listener class-name="express_cart.listener.TestListener"></listener>
 	</listeners>
-  <!-- <test  name="TestFirefox">
-    <parameter name="browser" value="chrome"></parameter>
-    <classes>
-      <class name="express_cart.test_cases.testRun"/>
-    </classes>
-  </test> Test
-  <test  name="TestChrome">
-    <parameter name="browser" value="firefox"></parameter>
-    <classes>
-      <class name="express_cart.test_cases.testRun"/>
-    </classes>
-  </test> Test -->
-   <test  name="HomePageChecks - FireFox">
-    <parameter name="browser" value="firefox"></parameter>
-    <classes>
-      <class name="express_cart.ui.homepage.test.HomePageCheck"/>
-    </classes>
-  </test>
-  <test  name="HomePageChecks - Chrome">
-    <parameter name="browser" value="chrome"></parameter>
-    <classes>
-      <class name="express_cart.ui.homepage.test.HomePageCheck"/>
-    </classes>
-  </test>
+	<!-- <test name="TestFirefox"> <parameter name="browser" value="chrome"></parameter> 
+		<classes> <class name="express_cart.test_cases.testRun"/> </classes> </test> 
+		Test <test name="TestChrome"> <parameter name="browser" value="firefox"></parameter> 
+		<classes> <class name="express_cart.test_cases.testRun"/> </classes> </test> 
+		Test -->
+	<test name="HomePageChecks - FireFox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="express_cart.ui.homepage.test.HomePageCheck" />
+		</classes>
+	</test>
+	<test name="HomePageChecks - Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="express_cart.ui.homepage.test.HomePageCheck" />
+		</classes>
+	</test>
+	<test name="ProductPageChecks - FireFox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="express_cart.ui.product.test.ProductPageCheck" />
+		</classes>
+	</test>
+	<test name="ProductPageChecks - Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="express_cart.ui.product.test.ProductPageCheck" />
+		</classes>
+	</test>
+	<test name="NegativeAdminLogin - Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="express_cart.ui.adminlogin.test.NegativeAdminLogin" />
+		</classes>
+	</test>
+	<test name="NegativeAdminLogin - Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="express_cart.ui.adminlogin.test.NegativeAdminLogin" />
+		</classes>
+	</test>
+	<test name="PositiveAdminLogin - Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="express_cart.ui.adminlogin.test.PositiveAdminLogin" />
+		</classes>
+	</test>
+	<test name="PositiveAdminLogin - Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="express_cart.ui.adminlogin.test.PositiveAdminLogin" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->

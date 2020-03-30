@@ -13,11 +13,11 @@ public class AdminLoginPage
     public AdminLoginPage( WebDriver driver )
     {
         super( driver );
-        // TODO Auto-generated constructor stub
+
     }
 
     String adminPageUrl = getConfigurationsByKey( "AdminUrl" );
-    
+
     String dashboardUrl = "http://192.168.1.8:1111/admin/dashboard";
 
     private By signinHeadingLocator = By.xpath( "//h2[@class='form-signin-heading']" );
@@ -29,19 +29,22 @@ public class AdminLoginPage
     private By signinButtonLocator = By.xpath( "//button[@id='loginForm']" );
 
     private By errorMessageLocator = By.xpath( "//div[@id='notify_message']" );
-    
+
     private By dashboardHeaderLocator = By.xpath( "//h2[contains(text(),'Dashboard')]" );
-    
-    public void openAdminLoginPage(  )
+
+    // Open admin login page
+    public void openAdminLoginPage()
     {
         openUrl( adminPageUrl );
     }
-    
-    public void waitForAdminLoginPage(  )
+
+    // Wait for the page to load
+    public void waitForAdminLoginPage()
     {
         waitForVisibilityOf( signinHeadingLocator, 5 );
     }
 
+    // Function to fill in email in email input field
     public void fillInEmail( String email )
     {
         System.out.println( "Filling email" );
@@ -49,6 +52,7 @@ public class AdminLoginPage
         System.out.println( "Email filled:" + email );
     }
 
+    // Function to fill in password in password input field
     public void fillInPassword( String password )
     {
         System.out.println( "Filling password" );
@@ -56,6 +60,7 @@ public class AdminLoginPage
         System.out.println( "Email filled:" + password );
     }
 
+    // Click on sign in button
     public void clickSignInButton()
     {
         System.out.println( "Clicking signin button" );
@@ -63,6 +68,7 @@ public class AdminLoginPage
         System.out.println( "Signin button clicked" );
     }
 
+    // Wait for Error message that appears after inputing wrong information
     public void waitForErrorMessage()
     {
         System.out.println( "Waiting for error messaeg to appear" );
@@ -73,19 +79,23 @@ public class AdminLoginPage
         }
     }
 
+    // Function to return the text in the error messsage
     public String getErrorMessage()
     {
         return driver.findElement( errorMessageLocator ).getText();
     }
-    
-    public void verifySigninSuccessful(  )
+
+    // Function to verify if the signin was successful
+    public void verifySigninSuccessful()
     {
-        System.out.println("Checking current URL");
+        System.out.println( "Checking current URL" );
         String currentUrl = driver.getCurrentUrl();
         Assert.assertEquals( currentUrl, dashboardUrl, "Current URL doesn't equal dashboardUrl" );
-        System.out.println("Current URL:"+currentUrl);
-        Assert.assertTrue( driver.findElement( dashboardHeaderLocator ).isDisplayed(), "Dashboard header text isn't visible" );
-        System.out.println("Dashboard header text is visible?"+driver.findElement( dashboardHeaderLocator ).isDisplayed());
+        System.out.println( "Current URL:" + currentUrl );
+        Assert.assertTrue( driver.findElement( dashboardHeaderLocator ).isDisplayed(),
+                           "Dashboard header text isn't visible" );
+        System.out.println( "Dashboard header text is visible?"
+            + driver.findElement( dashboardHeaderLocator ).isDisplayed() );
     }
 
 }

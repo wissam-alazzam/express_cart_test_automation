@@ -31,7 +31,6 @@ public class PositiveAdminLogin
         }
         catch ( Exception e )
         {
-            // TODO Auto-generated catch block
            
             Assert.fail( e.getMessage(), e );
         }
