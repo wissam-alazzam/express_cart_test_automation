@@ -27,8 +27,15 @@ Note: Maven configuration on POM.xml should automatically download the dependenc
 3. In Goals add: clean test
 4. Apply/Run
 
+## Check out Express Cart Automation Test Run on YouTube
+https://www.youtube.com/watch?v=vyDIfNB-_0I
 
-This Read me file will be updated when phase one of the project is finished.
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=vyDIfNB-_0I
+" target="_blank"><img src="http://img.youtube.com/vi/vyDIfNB-_0I/0.jpg" 
+alt="Express Cart Automation Test RUn YouTube" width="240" height="180" border="10" /></a>
+
+
+This README file will be updated when phase one of the project is finished.
 
 Contact me for more information:
 Wessam Alazzam
