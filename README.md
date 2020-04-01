@@ -27,6 +27,13 @@ Note: Maven configuration on POM.xml should automatically download the dependenc
 3. In Goals add: clean test
 4. Apply/Run
 
+## Reporting
+Reporting is done using Allure framwork (Learn more and how to install frome here https://docs.qameta.io/allure/)
+![Screen Shot 2020-04-01 at 9 02 20 AM](https://user-images.githubusercontent.com/5068661/78113738-13d48580-73f8-11ea-98cc-c9e63eca411f.png)
+
+![Screen Shot 2020-04-01 at 9 01 45 AM](https://user-images.githubusercontent.com/5068661/78113795-2e0e6380-73f8-11ea-8111-61abe71da458.png)
+
+
 ## Check out Express Cart Automation Test Run on YouTube
 https://www.youtube.com/watch?v=vyDIfNB-_0I
 
